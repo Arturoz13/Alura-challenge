@@ -1,0 +1,226 @@
+*{
+    font-family: cursive;
+}
+body{
+    /* background-color: #E5E5E5; */
+    /* background: linear-gradient(145deg,rgb(209, 244, 255) 30%, rgb(189, 74, 255)) 100%; */
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+.header{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 90%;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    min-width: 20%;
+    justify-content: space-evenly;
+}
+.logo img{
+    height: 50%;
+    margin-top: 25px;
+}
+.titulo{
+    min-width: 60%;
+    color: rgb(10, 53, 113);
+}
+.principal{
+    display: flex;
+    /* background-color: teal; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.texto{
+    /* background-color: aquamarine; */
+    min-width: 80%;
+    margin: 10px 0 10px 100px;
+    color: rgb(10, 53, 113);
+}
+.material-symbols-outlined{
+    width: 25px;
+    height: 25px;
+}
+.encriptar{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blueviolet; */
+    width: 50%;
+    justify-content: space-evenly;
+
+}
+#encriptador{
+    width: 550px;
+    height: 350px;
+    outline: none;
+    color: rgb(29, 0, 109);
+}
+.botones{
+    display: flex;
+    /* background-color: aqua; */
+    min-width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.desencriptar{
+    display: flex;
+    width: 30%;
+    background-color: rgb(218, 236, 250);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.507);
+    color: rgb(29, 0, 109);
+    border-radius: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.desencriptador{
+    margin: 0 auto;
+}
+.desencriptar img{
+    width: 300px;
+}
+.desencriptar p{
+    margin: 15px 25px;
+}
+.texto-desencriptar{
+    font-size: 25px;
+    font-weight: bold;
+}
+.mensaje{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+#desencriptador{
+    display: none;
+    height: 350px;
+    width: 300px;
+    background-color: #ff288200;
+    outline: none;
+    color: rgb(29, 0, 109);
+    margin: 20px 0 ;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #9773fc ;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #671fa3;
+  }
+.div-copiar{
+    display: flex;
+    /* background-color: skyblue; */
+    min-width: 100%;
+    margin-bottom: 25px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#encriptador::placeholder{
+    color: rgb(29, 0, 109);
+}
+#encriptador::selection, #desencriptador::selection{
+    background-color: #a52ec9;
+    color:white;
+}
+#encriptador {
+    margin: 20px 0 ;
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgba(255, 218, 250, 0);
+}
+
+
+.btn-encriptar, .btn-desencriptar, .txt-copiado{
+    padding: 15px 15px;
+    background:  #2397f0;
+    border: 0.5px solid rgba(255, 255, 255, 0.493);
+    margin-bottom: 25px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+}
+.btn-copiar{
+    display: none;
+    border: 0.5px solid rgba(255, 255, 255, 0.493);
+    background: #2397f0;
+    padding: 13px 33px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+}
+#txt-copiado{
+    display: none;
+    margin-bottom: 25px;
+}
+.fa-lock, .fa-lock-open, .fa-copy{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+.btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover{
+    background-color: #55acee;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btn-encriptar::selection, .btn-desencriptar::selection, .btn-copiar::selection{
+    transform: scale(1.5);
+}
+.footer{
+     background-color: #b7d6ff;
+     margin-top: 50px;
+     min-height: 100px;
+     text-align: center;
+     color: white;
+}
+@media screen and (max-width: 450px){
+    .titulo{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .texto{
+        margin: 10px;
+    }
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .encriptar{
+        width: 370px;
+    }
+    .desencriptar{
+        width: 370px;
+    }
+    #desencriptador{
+        width: 300px;
+        height: 300px;
+    }
+    .texto-desencriptar{
+        font-size: 15px;
+    }
+    .mensaje{
+        font-size: 15px;
+    }
+    #imagen{
+        display: none;
+    }
+}
