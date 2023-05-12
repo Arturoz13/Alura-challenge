@@ -179,11 +179,16 @@ body{
     transform: scale(1.5);
 }
 .footer{
-     background-color: #b7d6ff;
-     margin-top: 50px;
-     min-height: 100px;
+     background-color: #a5ccff;
      text-align: center;
      color: white;
+     margin-top: 50px;
+     padding: 50px;
+}
+.footer1{
+    height: 70px;
+    width: 70px;
+    margin-left: 200px;
 }
 @media screen and (max-width: 450px){
     .titulo{
