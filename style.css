@@ -106,24 +106,17 @@ body{
     border-radius: 20px;
     padding: 20px 0;
 }
-/* width */
 ::-webkit-scrollbar {
     width: 7px;
   }
-  
-  /* Track */
   ::-webkit-scrollbar-track {
     background: #ffffff;
     border-radius: 5px;
   }
-  
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #9773fc ;
     border-radius: 5px;
   }
-  
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #671fa3;
   }
